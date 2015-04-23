@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* RESETS */
+body, body * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;}
+	
+a img {
+	border: 0;}
+/* END RESETS */
+
+/* FOR DEVO */
+body {
+	background-image:url(images/bg-940-grid.jpg);
+	background-position: 50%;
+	background-repeat: repeat-y;
+	font-family: 'Lato', sans-serif;
+	background-color:#000000}
+	
+/*div, header, aside, footer, main, nav {
+	border:1px solid red;}*/
+/* END DEVO
+
+/* COLORS */
+/* white: #FCFCFCF */
+/* black: #000000 */
+/* Teal: #00CCD6 */
+/* Yellow: #FFD900 */
+/* Charcoal: #424242 */
+
+/* END COLORS */
+
+/* TEXT STYLES */
+html {
+	font-size: 16px;} /* 1 rem = 16px */
+	
+body {
+	font-size:100%;
+	line-height: 1.5;}
+h1 {
+	font-size: 300%;
+	color: #00CCD6;}
+	
+h3 {
+	color:#00CCD6;
+}
+	
+a:link, a:visited {
+	text-decoration:none;
+	color:#FCFCFC;}
+	
+a:hover, a:focus {
+	text-decoration:none;
+	color:#000000;}
+#middle h2 {
+	background-color:#FFD900;
+	color:#000000;
+	padding: .10em;
+}
+
+/* LAYOUT */
+#wrapper {
+	max-width: 940px;
+	max-width: 58.75rem; /* 940 / 16 */
+	width: 96%;
+	margin: 0 auto;}
+	
+#middle {	
+	overflow: hidden;
+	padding: 1.25em;
+	color:#FFFFFF;
+	background-color: #424242;}
+
+#specs {
+	width: 460px; /*460 / 940 * 100 Fallback */
+	width: 48.936170212766%;
+	padding: 1em;
+	float: left;}
+	
+#images-nav {
+	width: 460px;
+	width: 48.936170212766%; /* 460 * 940 * 100 Fallback */
+	padding: 1em;
+	float: right;}
+#images-nav img {
+	width:200px;
+}
+
+#footer {
+	text-align:center;
+	background-color: #00CCD6;
+	color:#FFFFFF;
+	clear: both;
+}
+
+/* NAV LINKS */
+#navlinks {
+	margin: 0;
+	padding: .25em;
+	font-size: 125%;
+	inline-box-align:initial;
+	background-color:#00CCD6;
+	text-align:center;}
+#navlinks ul li {
+	display: inline-block;
+	padding: .2em 2em;
+	text-transform: uppercase;}
+
+.slicknav_menu {
+	display:none;
+}
+	
+img {
+	max-width:100%;}
+
+img, embed, object, video, iframe, .wp-caption {
+	max-width: 100%;}	
+
+	
