@@ -1,6 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
+/*
+Theme Name: Push Pull Demo 
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Nectar Shakir
+Author URI: http://www.nectarshakir.com
+Description: This is a demo theme for Push Pull Studio for WEB 170 WordPress Class
+Version 1.0
 
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
 /* RESETS */
 body, body * {
 	margin: 0;
@@ -12,12 +22,12 @@ a img {
 /* END RESETS */
 
 /* FOR DEVO */
-body {
+/*body {
 	background-image:url(images/bg-940-grid.jpg);
 	background-position: 50%;
 	background-repeat: repeat-y;
 	font-family: 'Lato', sans-serif;
-	background-color:#000000}
+	background-color:#FCFCFC;}*/
 	
 /*div, header, aside, footer, main, nav {
 	border:1px solid red;}*/
@@ -38,13 +48,21 @@ html {
 	
 body {
 	font-size:100%;
-	line-height: 1.5;}
+	line-height: 1.5;
+	font-family: 'Lato', sans-serif;
+	background-color:#FFFFFF;}
 h1 {
 	font-size: 300%;
-	color: #00CCD6;}
+	color: #00CCD6;
+	text-align: center;}
 	
 h3 {
 	color:#00CCD6;
+}
+
+small {
+	display: block;
+	clear: both;
 }
 	
 a:link, a:visited {
@@ -53,41 +71,54 @@ a:link, a:visited {
 	
 a:hover, a:focus {
 	text-decoration:none;
-	color:#000000;}
+	color:#000000;
+	}
 #middle h2 {
-	background-color:#FFD900;
+	background-color:#00CCD6;
 	color:#000000;
 	padding: .10em;
 }
-
+	
 /* LAYOUT */
 #wrapper {
 	max-width: 940px;
 	max-width: 58.75rem; /* 940 / 16 */
 	width: 96%;
-	margin: 0 auto;}
-	
+	margin: 0 auto;
+	background-color:#ffffff;}
+
 #middle {	
 	overflow: hidden;
-	padding: 1.25em;
-	color:#FFFFFF;
-	background-color: #424242;}
+	color:#000000;}
 
-#specs {
-	width: 460px; /*460 / 940 * 100 Fallback */
-	width: 48.936170212766%;
+#blog {
+	width: 520px; /*460 / 940 * 100 Fallback */
+	width: 55.31914893617%;
 	padding: 1em;
+	overflow: hidden;
 	float: left;}
 	
-#images-nav {
-	width: 460px;
-	width: 48.936170212766%; /* 460 * 940 * 100 Fallback */
+#services {
+	width: 420px;
+	width: 44.68085106383%; /* 460 * 940 * 100 Fallback */
 	padding: 1em;
-	float: right;}
-#images-nav img {
-	width:200px;
+	float: right;
 }
-
+	
+#rooms {
+	width: 460px; /*460 / 940 * 100 Fallback */
+	width: 48.93617%;
+	padding: 1em;
+	overflow: hidden;
+	float: left;}
+	
+#room-images {
+	width: 460px;
+	width: 48.93617%; /* 460 * 940 * 100 Fallback */
+	padding: 1em;
+	float: right;
+}
+	
 #footer {
 	text-align:center;
 	background-color: #00CCD6;
@@ -95,27 +126,255 @@ a:hover, a:focus {
 	clear: both;
 }
 
+#footer-nav {
+	width: 50%;
+	text-align: left;
+}
+
+#about {
+	width: 400px;
+}
+
+#footer-nav li {
+	list-style: none;
+	display: inline-block;
+}
+
 /* NAV LINKS */
-#navlinks {
+#navigation {
 	margin: 0;
 	padding: .25em;
 	font-size: 125%;
 	inline-box-align:initial;
-	background-color:#00CCD6;
-	text-align:center;}
-#navlinks ul li {
-	display: inline-block;
+	overflow: hidden;
+	text-align:center;
+	background-color:#FFFFFF;
+}
+#navigation ul li {
+	display: inline;
+	list-style: none;
 	padding: .2em 2em;
-	text-transform: uppercase;}
+	text-transform: uppercase;
+}
 
-.slicknav_menu {
-	display:none;
+#navigation ul li ul.sub-menu {
+	display: none;
+}
+
+#navigation ul li.current a {
+	color: #EBB700;
+}
+
+#navigation ul li.current-menu-item a, #navigation ul li.current-menu-parent a {
+color: #EBB700; /* and use bright gold */
 }
 	
+#navigation li a:link,
+#navigation li a:visited {
+	text-decoration: none;
+	color: #9B9B9B;
+}
+
+#navigation li a:hover,
+#navigation li a:focus {
+	text-decoration:none;
+	color: #000000;
+}
+
+#rooms li a:link, 
+#rooms li a:visited {
+	text-decoration:none;
+	color:#9B9B9B;}
+	
+#rooms li a:hover,
+#rooms li a:focus {
+	text-decoration:none;
+	color:#000000;}
+
+#blog a:link, a:visited {
+	text-decoration:none;
+	color:#FFD900;}
+	
+#blog a:hover, a:focus {
+	text-decoration:none;
+	color:##FFD900;}
+
+#toggle {
+	display: none;
+}
+#toggle-nav {
+	display: block;
+}
+#albums {
+	padding: 1em;
+}
+#albums li {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+
+#albums img {
+	padding: 5px;
+}
+
+#rooms li { 
+	list-style: none;
+}
+
+#room-images li {
+	list-style:none;
+}
+
+#room-images img{
+	padding: 5px;
+	float: left;
+}
+
+
+/*FORM STYLES*/
+fieldset {
+	padding: 10px;
+	padding: 0.625em;
+	display: block;
+}
+
+textarea {
+	font-size: 100%;
+	width: 100%;
+	
+}
+
+img.alignleft {
+	float: left;	
+	margin: .25em 20px .25em 0;  /* fallback   */
+	margin: .25em 1.25rem .25em 0;  
+}
+
+img.icons {
+	padding: 5px;
+}
+
 img {
-	max-width:100%;}
+	max-width:100%;
+	margin: 0 auto;}
 
 img, embed, object, video, iframe, .wp-caption {
 	max-width: 100%;}	
 
+/*MEDIA QUERIES*/
+@media all and (max-width: 800px) {
+	/* #menu is the original menu */
+	#wrapper {
+		width: 100%;
+	}
+	#services, #blog {
+		clear: both;
+		width: 100%;
+	}
 	
+	#rooms {
+		clear: both;
+		width: 100%;
+	}
+	#toggle-nav {
+		display: none;
+		clear: both;
+	}
+	
+	#toggle-nav ul li {
+		display: block;
+	}
+	#navigation ul li ul.sub-menu {
+		display: block;
+	}
+	
+	
+	#toggle {
+		cursor: pointer;
+		display: block;
+		float: right;
+		padding: 10px;
+	}
+}
+
+/* Word Press Core Style Sheet */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+
+
+
