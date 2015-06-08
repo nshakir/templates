@@ -5,6 +5,7 @@
 <div id="services">
 <h2>ABOUT US</h2>
 seattle premiere recording
+<?php dynamic_sidebar(1); ?>  <!-- widget -->
 <?php if ( have_posts() ) : while( have_posts() ) : the_post(); 
 ?>
 <?php the_content(''); ?>
