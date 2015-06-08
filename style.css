@@ -64,6 +64,14 @@ small {
 	display: block;
 	clear: both;
 }
+
+blockquote {
+	color: #424242;
+	font-style: italic;
+	font-weight:300;
+	font-size: 150%;
+	
+}
 	
 a:link, a:visited {
 	text-decoration:none;
