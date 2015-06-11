@@ -4,12 +4,14 @@
 <title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?> | PUSH/PULL Studio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
+<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
 
 <!-- LINK STYLES -->
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css" media="all"/>
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
+<script src="<?php bloginfo('template_directory'); ?>/jquery.flexslider.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
 <!-- Begin Toggle Menu -->
@@ -28,6 +30,16 @@
 	});
 </script>
 <!-- End Toggle Menu -->
+
+<!-- Begin Flexslider -->
+<script type="text/javascript">
+    $(window).load(function(){
+        $('.flexslider').flexslider({
+            animation: "fade",
+        });
+    })
+</script>
+<!--end Flexslider -->
 </head>
 <?php wp_head(); ?>
 <!--END HEADER PHP-->
